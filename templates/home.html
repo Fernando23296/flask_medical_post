@@ -1,0 +1,9 @@
+{%extends "layout.html"%}
+{%block content%}
+    <h1>Hola esto es home</h1>
+    <h1>{%for i in posts%}</h1>
+    <h1>{{i.title}}</h1>
+    <p>El autor es: {{i.author}}</p>
+    <h1>{%endfor%}</h1>
+
+{%endblock content%}
